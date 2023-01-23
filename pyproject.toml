@@ -12,6 +12,7 @@ typer = "^0.7.0"
 
 [tool.poetry.scripts]
 atk-hcloud-upload ="atk_hcloud_upload.sync:main"
+atk-hcloud-download ="atk_hcloud_upload.download:main"
 
 
 
