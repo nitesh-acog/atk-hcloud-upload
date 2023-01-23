@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "atk-hcloud-upload"
+version = "0.1.0"
+description = ""
+authors = ["Nitesh <nitesh@aganitha.ai>"]
+readme = "README.md"
+packages = [{include = "atk_hcloud_upload"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.7.0"
+
+[tool.poetry.scripts]
+atk-hcloud-upload ="atk_hcloud_upload.sync:main"
+
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,25 @@
+import typer,os
+shell_s=os.path.dirname(os.path.abspath(__file__))
+
+app=typer.Typer()
+
+@app.command()
+def sync(project:str,local_path:str,inp_dir_name:str,host:str):
+    """
+    args: project here is name of the project that will be created in /home folder of storage
+    project="minimisation"
+    loca_path here is the path where the input folder lies its an absolute path,
+    input_dir_name here is name of input folder you are pushing
+    host here is admin provided name 
+    """
+    try:
+
+      os.system(f"/bin/bash {shell_s}/sync_folder.sh {local_path} {project} {inp_dir_name} {host}")
+    except Exception as e:
+        print("Please")
+
+def main():
+    app()
+
+# if __name__=='__main__':
+#     sync('test1','/Users/nitesh/Desktop/work/atk-packages/atk-hcloud-upload/out/','input_folder',"u332964-sub1@95.217.92.102")
