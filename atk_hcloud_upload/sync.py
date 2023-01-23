@@ -22,4 +22,4 @@ def sync(project:str,local_path:str,inp_dir_name:str,host:str):
 #     app()
 
 if __name__=='__main__':
-    sync('test1','/Users/nitesh/Desktop/work/atk-packages/atk-hcloud-upload/out/','input_folder',"u332964-sub1@95.217.92.102")
+    sync('test1','/Users/nitesh/Desktop/work/atk-packages/atk-hcloud-upload/out/','out.put',"u332964-sub1@95.217.92.102")
