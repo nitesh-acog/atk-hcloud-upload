@@ -33,8 +33,8 @@ sync_folder_local_host() {
     fi
     # Use the --ignore-existing option to skip files that already exist in the remote folder
     
-    rsync -avzP -e 'ssh -p 23 -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no' $local_path $host:$remote_path/$exp_in/
-    echo "##################  SUCCESSFULLY SYNCED THE FOLDER WITH CLOUD  ########################"
+    rsync -avzP -e 'ssh -p 23 -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no' $local_path $host:$remote_path/
+    echo "##################  SUCCESSFULLY SYNCED THE FOLDER WITH CLOUD  ####################################"
 }
 
 # USAGE
