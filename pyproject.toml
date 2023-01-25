@@ -10,12 +10,27 @@ packages = [{include = "atk_hcloud_upload"}]
 python = "^3.10"
 typer = "^0.7.0"
 
+
+
 [tool.poetry.scripts]
 atk-hcloud-upload ="atk_hcloud_upload.sync:main"
 atk-hcloud-download ="atk_hcloud_upload.download:main"
 
 
 
+
+[[tool.poetry.source]]
+name = "prod"
+url = "https://pypi.aganitha.ai/"
+default = false
+secondary = true
+
+
+[[tool.poetry.source]]
+name = "dev"
+url = "https://dev-pypi.aganitha.ai/"
+default = false
+secondary = true
 
 [build-system]
 requires = ["poetry-core"]
